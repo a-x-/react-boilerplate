@@ -1,0 +1,118 @@
+html {
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 20px;
+}
+.app {
+  background: whitesmoke;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight: 400;
+}
+main {
+  padding: 0 1vw;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 2.5em;
+}
+a {
+  color: #02bfe6;
+  font-weight: bold;
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+.logo {
+  font-weight: bold;
+}
+.logo__icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: text-bottom;
+}
+.app-header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 249, 220, 0.9);
+  z-index: 100;
+  padding: 0 1vw;
+  white-space: nowrap;
+}
+header a {
+  color: #333;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  display: inline-block;
+}
+header a span {
+  padding: 0 .5em;
+}
+header a._current span {
+  background: white;
+  border-radius: 6px;
+}
+header a + a {
+  margin-left: .5em;
+}
+
+.ui.input input:focus {
+  outline: none;
+  border-color: gray;
+}
+.ui-group {
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+.ui-group > * {
+  flex: 1;
+}
+/* TODO: https://github.com/Semantic-Org/Semantic-UI/issues/5314*/
+.ui-group .ui.button {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 40px;
+}
+.ui-group .ui.dropdown._attached_left,
+.ui-group .ui.selection.dropdown._attached_left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.or.ui-custom {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 .5em;
+  flex-grow: 0;
+}
+.page-table {
+  background: white;
+}
+.ui.toggle.checkbox input, .ui.toggle.checkbox label:after {
+  box-shadow: 0 0 2px #2185D0 !important;
+}
+.ui.toggle.checkbox {
+  padding-left: 2px;
+}
+.ui.button {
+  white-space: nowrap;
+}
+.ReactTable .rt-th, .ReactTable .rt-td {
+  padding: 1em 1ex;
+}
+.ReactTable .-pagination {
+    position: sticky;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.80);
+}

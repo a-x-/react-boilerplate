@@ -1,0 +1,10 @@
+.page_index .app-header {
+  position: fixed;
+}
+.page_index .page__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
